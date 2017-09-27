@@ -4,6 +4,9 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { MdToolbarModule } from '@angular/material';
+import { MdListModule } from '@angular/material';
+import { MdGridListModule } from '@angular/material';
+import { MdCardModule } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
 import 'hammerjs';
@@ -19,6 +22,9 @@ import { MenuComponent } from './menu/menu.component';
     BrowserModule,
     BrowserAnimationsModule,
     MdToolbarModule,
+    MdListModule,
+    MdGridListModule,
+    MdCardModule,
     FlexLayoutModule
   ],
   providers: [],
