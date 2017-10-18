@@ -10,6 +10,13 @@ import { MdCardModule } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import {MdDialogModule} from '@angular/material';
+import {MdFormFieldModule} from '@angular/material';
+import { ReactiveFormsModule } from '@angular/forms';
+import { MdSlideToggleModule } from '@angular/material';
+import { MdSelectModule } from '@angular/material';
+
+import { MatFormFieldControl } from '@angular/material';
+import { MatInputModule } from '@angular/material';
 
 import 'hammerjs';
 import { AppComponent } from './app.component';
@@ -48,7 +55,11 @@ import { LoginComponent } from './login/login.component';
     FlexLayoutModule,
     AppRoutingModule,
     FormsModule,
-    MdDialogModule
+    MdDialogModule,
+    MdFormFieldModule,
+    ReactiveFormsModule,
+    MdSlideToggleModule,
+    MdSelectModule,
     ],
   entryComponents: [
     LoginComponent

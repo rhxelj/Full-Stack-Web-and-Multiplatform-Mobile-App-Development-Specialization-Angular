@@ -8,8 +8,8 @@ export class LeaderService {
 
   constructor() { }
   // By rhxlej
-  getLeaders(): Leader[] {
-    return Leaders;
+  getLeaders(): Promise<Leader[]> {
+    return Promise.resolve(Leaders);
   }
 
 }

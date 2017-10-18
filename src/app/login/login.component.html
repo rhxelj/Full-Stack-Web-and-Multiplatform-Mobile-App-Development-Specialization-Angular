@@ -10,7 +10,7 @@
 <form novalidate #loginForm="ngForm" (ngSubmit)="onSubmit()">
   <md-dialog-content>
   <p>
-    <md-form-field >
+    <md-form-field dividerColor="{{username.invalid && !username.pristine ? 'warn' : 'primary'}}">
       <input mdInput placeholder="Username" type="text" [(ngModel)]="user.username" name="username" #username="ngModel" required>
       <md-hint>
         <span [hidden]="username.pristine">
@@ -20,7 +20,7 @@
     </md-form-field>    
     
      
-    <md-form-field >  
+    <md-form-field dividerColor="{{password.invalid && !password.pristine ? 'warn' : 'primary'}}">  
         <input mdInput placeholder="Password" type="password" [(ngModel)]="user.password" name="password" #password="ngModel"required>
         <md-hint>
           <span [hidden]="password.pristine">
