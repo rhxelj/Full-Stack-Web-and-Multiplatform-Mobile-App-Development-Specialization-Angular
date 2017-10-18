@@ -21,6 +21,10 @@ fxLayoutGap="10px">
     </md-card>
     
 </div>
+<div [hidden]="dish">
+    <md-spinner></md-spinner> <h4>Loading . . . Please Wait</h4>
+</div>
+
 <div>
     
     <md-card *ngIf="promotion" fxFlex>
@@ -38,6 +42,9 @@ fxLayoutGap="10px">
     </md-card>
     
 </div>
+<div [hidden]="promotion">
+    <md-spinner></md-spinner> <h4>Loading . . . Please Wait</h4>
+</div>
 <span *ngFor="let leader of leaders" >
     <md-card *ngIf="leader.featured" fxFlex>
         <md-card-header>
@@ -53,5 +60,8 @@ fxLayoutGap="10px">
         </md-card-content>
     </md-card>
 </span>
+<div [hidden]="leader.featured">
+    <md-spinner></md-spinner> <h4>Loading . . . Please Wait</h4>
+</div>
 
 </div>
