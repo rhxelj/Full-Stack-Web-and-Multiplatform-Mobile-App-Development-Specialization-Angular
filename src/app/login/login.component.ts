@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import {MdDialogModule, MdDialogRef} from '@angular/material';
+import {MatDialogModule, MatDialogRef} from '@angular/material';
 
 @Component({
   selector: 'app-login',
@@ -9,7 +9,7 @@ import {MdDialogModule, MdDialogRef} from '@angular/material';
 })
 export class LoginComponent implements OnInit {
   user = {remember: false};
-  constructor(public dialogRef: MdDialogRef<LoginComponent>) { }
+  constructor(public dialogRef: MatDialogRef<LoginComponent>) { }
 
   ngOnInit() {
   }

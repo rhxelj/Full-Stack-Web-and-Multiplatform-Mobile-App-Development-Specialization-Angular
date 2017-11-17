@@ -3,19 +3,19 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import { MdToolbarModule } from '@angular/material';
-import { MdListModule } from '@angular/material';
-import { MdGridListModule } from '@angular/material';
-import { MdCardModule } from '@angular/material';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatListModule } from '@angular/material/list';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatCardModule } from '@angular/material/card';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { AppRoutingModule } from './app-routing/app-routing.module';
-import {MdDialogModule} from '@angular/material';
-import {MdFormFieldModule} from '@angular/material';
+import { MatDialogModule} from '@angular/material/dialog';
+import { MatFormFieldModule} from '@angular/material/form-field';
 import { ReactiveFormsModule } from '@angular/forms';
-import { MdSlideToggleModule } from '@angular/material';
-import { MdSelectModule } from '@angular/material';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { MatSelectModule } from '@angular/material/select';
 
-import { MatFormFieldControl } from '@angular/material';
+import { MatFormFieldControl } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material';
 import {MatProgressSpinnerModule} from '@angular/material';
 
@@ -49,18 +49,18 @@ import { LoginComponent } from './login/login.component';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MdToolbarModule,
-    MdListModule,
-    MdGridListModule,
-    MdCardModule,
+    MatToolbarModule,
+    MatListModule,
+    MatGridListModule,
+    MatCardModule,
     FlexLayoutModule,
     AppRoutingModule,
     FormsModule,
-    MdDialogModule,
-    MdFormFieldModule,
+    MatDialogModule,
+    MatFormFieldModule,
     ReactiveFormsModule,
-    MdSlideToggleModule,
-    MdSelectModule,
+    MatSlideToggleModule,
+    MatSelectModule,
     MatProgressSpinnerModule
     ],
   entryComponents: [
